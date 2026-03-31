@@ -1,38 +1,53 @@
-<main class="container">
-    <html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Adopt a Fuggler</title>
-  <!-- SVG Favicon link -->
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
-    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Basic alignment styles */
+    body { display: flex; flex-direction: column; min-height: 100vh; margin: 0; }
+    header, footer { text-align: center; padding: 20px; }
+    .container { flex: 1; display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
+  </style>
 </head>
+<body>
 
-    <!-- Card 1 with jpeg fileee -->
+  <header>
+    <h1>Adopt a Fuggler</h1>
+  </header>
+
+  <main class="container">
+    <!-- Card 1 -->
     <div class="card">
         <img src="assets/images/fuggly.jpg" alt="Fuggler Old Tooth" class="card-img">
         <div class="content">
-            <h1>Old Tooth</h1>
+            <h2>Old Tooth</h2>
             <p>A Laboratory Misfit with human-like teeth. Adopt if you dare!</p>
             <a href="#" class="cta-button">View</a>
-            <link rel="stylesheet" href="style.css">
         </div>
     </div>
 
-    <!-- Card 2 with webp fileee -->
+    <!-- Card 2 -->
     <div class="card">
         <picture>
             <source srcset="assets/images/fugonnet.webp" type="image/webp">
-            <img src="" alt="Fuggler Showcase" class="card-img" loading="lazy">
-            <link rel="stylesheet" href="style.css">
+            <img src="assets/images/fallback.jpg" alt="Fuggler Showcase" class="card-img" loading="lazy">
         </picture>
         <div class="content">
-            <h1>Showcase</h1>
+            <h2>Showcase</h2>
             <p>Optimized WebP delivery for lightning-fast performance.</p>
             <a href="#" class="cta-button">Adopt</a>
-            <link rel="stylesheet" href="style.css">
         </div>
     </div>
-</main>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Fuggler Collectors</p>
+  </footer>
+
+</body>
 </html>
+
